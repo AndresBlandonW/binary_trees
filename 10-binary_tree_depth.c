@@ -13,19 +13,19 @@ size_t binary_tree_depth(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	depth = depth_h(tree);
+	depth = depth_header(tree);
 	return (depth - 1);
 }
 
 /**
- * depth_h - the heavy lifter
+ * depth_header - the heavy lifter
  * @tree: tree to measure
  * Return: depth, root inclusive
  */
-size_t depth_h(const binary_tree_t *tree)
+size_t depth_header(const binary_tree_t *tree)
 {
 	if (tree == NULL)
 		return (0);
 
-	return (1 + depth_h(tree->parent));
+	return (1 + depth_header(tree->parent));
 }
