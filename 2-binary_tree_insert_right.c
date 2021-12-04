@@ -4,6 +4,7 @@
  * binary_tree_insert_right - insert a node as right-child
  * @parent: pointer parent node
  * @value: value to store in the new node
+ * Return: insert a node
  */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
